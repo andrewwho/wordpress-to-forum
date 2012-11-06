@@ -1,0 +1,32 @@
+.container {
+	margin-top: 20px;
+}
+
+.boxsizingBorder {
+box-sizing: border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+}
+
+.pushtop20 {
+	margin-top: 20px;
+}
+
+.inputbox {
+width: 100%; 
+height: 200px;
+}
+
+#pictures {
+	margin-left: 60px;
+}
+
+#pictures div {
+	height: 260px;
+	overflow: hidden;
+}
+
+#convert {
+	margin-bottom: 10px;
+}

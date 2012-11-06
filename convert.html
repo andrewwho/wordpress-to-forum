@@ -1,0 +1,153 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-andrewho-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title></title>
+	
+	<meta name="title" content="">
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Your Name Here">
+	<meta name="Copyright" content="Copyright Your Name Here 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Project Name">
+	<meta name="DC.subject" content="What you're about.">
+	<meta name="DC.creator" content="Who made this site.">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use; use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="_/img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="_/img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="_/css/style.css">
+	<link rel="stylesheet" href="_/css/bootstrap.min.css">
+	<link rel="stylesheet" href="_/css/custom.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="_/js/modernizr-1.7.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Prepare thy posts!</h1>
+        <p>This is a simple way to convert your existing wordpress posts into forum formatted posts :)</p>
+      </div>
+
+	<div class="row">
+		<div class="span">
+		<h2>Options</h2>
+		</div>
+	</div>
+	
+	<div class="row">
+
+		<div class="span3 well">
+		<div class="control-group">		
+			<div class="controls" id="captions">
+				<label class="checkbox">
+					<input id="addcaptions" type="checkbox" value="0" CHECKED/>Add Captions?</input> 
+				</label>
+				<select class="wherecaptions">>
+					<option value="Before">Before</option>
+					<option value="After">After</option>
+				</select>
+			</div>
+		</div>
+		</div>
+		
+		<div class="span2 well">
+		<div class="control-group">
+			<div class="controls">
+				<label class="checkbox">
+					<input id="imgtag" type="checkbox" value="0"/>Include an IMG tag?</input> 
+				</label>
+			</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="span12">
+		<h2>Insert thy wordpress junk.</h2>
+		<textarea class="boxsizingBorder inputbox" id="input"></textarea>
+		<a class="btn btn-primary btn-large" href="#" id="next">Next!</a>
+		</div>
+	</div>
+	
+	<!-- will need to use jquery to loop through all the images found above! -->
+	<div class="wrapper" style="margin: 0 auto; width: 1170px;">
+	<div class="row pushtop20" id="pictures">
+	</div>
+	</div>
+	
+		<div class="hero-unit">
+		<h1>Paste this into your favorite forum.</h1>
+		<textarea class="boxsizingBorder inputbox" id="output" style="margin-top: 10px;"></textarea>
+		</div>
+	
+
+      <hr>
+
+      <footer>
+        <p>by andrewho.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+</div>
+
+<!-- here comes the javascript -->
+
+<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script src="_/js/bootstrap.min.js"></script>
+
+	
+<!-- this is where we put our custom functions -->
+<script src="_/js/functions.js"></script>
+
+</body>
+</html>
